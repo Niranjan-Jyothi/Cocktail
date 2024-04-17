@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.28">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NReco.Logging.File" Version="1.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cocktails.Data.Implementation\Cocktails.Data.Implementation.csproj" />
+    <ProjectReference Include="..\Cocktails.Data\Cocktails.Data.csproj" />
+    <ProjectReference Include="..\Cocktails.Services.Implementation\Cocktails.Services.Implementation.csproj" />
+    <ProjectReference Include="..\Cocktails.Services\Cocktails.Services.csproj" />
+  </ItemGroup>
+
+</Project>
